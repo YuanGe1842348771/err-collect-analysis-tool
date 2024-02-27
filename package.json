@@ -1,0 +1,19 @@
+{
+  "name": "err-collect-analysis-tool",
+  "version": "1.0.0",
+  "description": "一个轻量级的报错搜集插件工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "openErreyTable": "node ./startServer.js"
+  },
+  "keywords": [
+    "nodejs",
+    "tool"
+  ],
+  "author": "YuanGe",
+  "license": "ISC",
+  "dependencies": {
+    "open": "^10.0.3"
+  }
+}
