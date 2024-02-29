@@ -12,7 +12,7 @@
             flex-direction: column;
             max-height: 100VH;
             height: 100vh;
-            font-family: pingfang;
+            font-family: myfont;
         }
 
         .info {
@@ -145,11 +145,11 @@
     </div>
     
     <div class="info">
-        <pre id="error" style="font-family: pingfang;">打开控制台查看操作方法</pre>
-        <pre id="jsonOutput" style="font-family: pingfang;"></pre>
+        <pre id="error" style="font-family: myfont;">打开控制台查看操作方法</pre>
+        <pre id="jsonOutput" style="font-family: myfont;"></pre>
     </div>
     <script type="module">
-        const regularFont = new FontFace('pingfang', `url(./pingfang.woff)`, {
+        const regularFont = new FontFace('myfont', `url(./myfont.woff)`, {
             weight: 'normal'
         });
         document.fonts.add(regularFont); // 添加字体到字体管理器中

@@ -16,9 +16,7 @@ class WebServer {
                 }
                 const root = RouterHandlers.getAbsolutePath(urlName);
                 await isFileExisted(root)
-                console.log("~ WebServer ~ root:", root)
                 const ContentType = RouterHandlers.routerNameToType(urlName);
-                console.log("~ ContentType:", urlName, "-----", ContentType);
                 const fileData = await readFile(root);
                 res.writeHead(200, { "Content-Type": ContentType });
                 res.write(fileData);

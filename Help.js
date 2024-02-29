@@ -1,4 +1,5 @@
 const fs = require("fs");
+/**读取文件 */
 exports.readFile = function (path_way) {
   return new Promise((resolve, reject) => {
     fs.readFile(path_way, function (err, data) {
