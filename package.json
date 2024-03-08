@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "openErreyTable": "node ./startServer.js",
-    "mytest": "node ./test/test.js"
+    "openErreyTable": "node ./startServer.js"
   },
   "keywords": [
     "nodejs",
