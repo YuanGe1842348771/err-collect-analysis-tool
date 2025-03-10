@@ -14,12 +14,13 @@ class ConfigHandlers {
         try {
             await isFileExisted(configFilePath)
             const configData = require(configFilePath);
-            this.config = configData;
+            this.#config = configData;
             return configData
         } catch (error) {
             throw '读取配置文件失败，请检查是否存在';
         }
     }
+    /**初始化配置信息 */
     async initConfigInfoAsync(){
         try {
             await this.getConfigFileAsync()
@@ -28,6 +29,7 @@ class ConfigHandlers {
             throw error
         }
     }
+    /**获取配置信息 */
     getConfigData(){
         return this.#config
     }
