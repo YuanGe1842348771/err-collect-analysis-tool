@@ -40,8 +40,9 @@ class RouterHandlers {
      * @param {*} Response 响应数据
      */
     to404(Request,Response){
-        Response.writeHead(404, { "Content-Type": "text/html" });
+        Response.writeHead(404, { "Content-Type": "text/html; charset=utf-8" });
         Response.write("<h1>404 Not Found</h1>");
+        Response.write("<h1>访问路径不存在</h1>");
         return Response.end();
     }
 
